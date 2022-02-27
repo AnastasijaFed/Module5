@@ -2,10 +2,12 @@ public class Main {
     public static void main(String[] args) {
         Human h1 = new Human("Jack", 33);
         h1.goExercise();
-        h1.goWork();
         h1.goEat();
         h1.goDrink();
-        h1.goWork();
+        h1.goRead();
+        h1.goEat();
+        h1.goExercise();
+        h1.goRead();
         h1.goEat();
         h1.goSleep();
         h1.printProperties();
@@ -89,6 +91,15 @@ class Human{
             System.out.println("You can't exercise, go take a nap");
             goSleep();
         }
-        else power = power - 10;
+        else {
+            power = power - 10;
+            fitness = fitness + 10;
+
+        }
+    }
+
+    public void goRead() {
+        if(happiness>90) happiness = 100;
+        else happiness = happiness + 10;
     }
 }
