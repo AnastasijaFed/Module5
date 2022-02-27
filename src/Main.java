@@ -2,12 +2,9 @@ public class Main {
     public static void main(String[] args) {
         Human h1 = new Human("Jack", 33);
         h1.goExercise();
-        h1.goWork();
-        h1.goEat();
         h1.goDrink();
         h1.goWork();
         h1.goEat();
-        h1.goSleep();
         h1.printProperties();
 
 
